@@ -26,7 +26,7 @@ class Welcome extends MY_Controller {
 	{
 		$this->data['home_page'] = 1;
 		$this->data['posts'] = $this->Post->find_active(3);
-		$this->load_theme('welcome');
-                //$this->load->view('themes/default/welcome');
+		//$this->load_theme('welcome');
+                $this->load->view('themes/default/language');
 	}
 }
